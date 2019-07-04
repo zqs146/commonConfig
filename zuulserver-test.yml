@@ -3,7 +3,7 @@ zuul:
     provider: /aaa/**
   ignored-patterns:
     - /**/provider/bus/test
-  sensitive-headers:
+  sensitive-headers:  #放过敏感的头信息（包含cookie）
 management:
   endpoints:
     web:
