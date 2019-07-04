@@ -1,2 +1,11 @@
-zuul: 
-  xx: hello zuul
+zuul:
+  routes:
+    provider: /aaa/**
+  ignored-patterns:
+    - /**/provider/bus/test
+  sensitive-headers:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
