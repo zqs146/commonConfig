@@ -11,3 +11,9 @@ management:
         include: "*"
 server:
   port: 9001
+spring:
+  rabbitmq:
+    host: 192.168.1.105
+    port: 5672
+    username: guest
+    password: guest
